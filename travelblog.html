@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Blog</title>
+    <link rel="icon" href="travel.jpeg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #ece5e5; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+        text-align: center;
+        padding: 20px;
+        background-color: #e0c8c8;
+    }
+
+    header h1 {
+        margin:0;
+        font-size: 36px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #412b2b;
+    }
+    
+        .intro-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .intro-content img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .intro-content p {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        #intro h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+        <nav>
+            <a href="#intro">Introduction</a> |
+            <a href="#destinations">Top</a> |
+            <a href="#quote">Quote</a>
+            <a href="#form">Travel Form</a>
+        </nav>
+    </header>
+    
+
+    <section id="intro">
+        <h2>Introduction</h2>
+        <div class="intro-content">
+            <img src="travel.jpeg" >
+            <p>Welcome to my travel blog! I love exploring new cultures
+            and breathtaking landscapes. Here's a glimpse of it.</p>
+        </div>
+    </section>
+
+
+    <section id="destinations" style="text-align: center;">
+        <hr>
+    <h1>Top 3 Travel Destinations</h1>
+    <table border="1" style="margin: auto; width: 70%; border-collapse: collapse;">
+    <tr style="background-color: #e0c8c8; color: white;">
+        <th>Country</th>
+        <th>Best Time to Visit</th>
+    </tr>
+    <tr>
+        <td>Japan</td>
+        <td>March - May</td>
+    </tr>
+    <tr>
+        <td>Italy</td>
+        <td>April - June</td>
+    </tr>
+    <tr>
+        <td>Iceland</td>
+        <td>June - August</td>
+    </tr>
+</table>
+
+</section>
+<section id="quote" style="text-align: center;">
+        <blockquote>
+            "The world is a book and those who do not travel read only one page." – Saint Augustine
+        </blockquote>
+        <hr>
+        <h2>My Trip Video</h2>
+        <iframe 
+        width="700" 
+        height="400" 
+        src="https://www.youtube.com/embed/vZdYo_1Pwz8" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </section>
+    <iframe 
+    src="https://open.spotify.com/embed/playlist/7q4tAYtTC96jCdVtp0EwmG?si=34f3ea75f4224395" 
+    width="300" 
+    height="80" 
+    frameborder="0" 
+    allowtransparency="true" 
+    allow="encrypted-media">
+</iframe>
+<section id="form" style="text-align: center;">
+    <hr>
+        <h2>Travel Form</h2>
+        <form>
+            <label>Full Name: <input type="text" name="fullname" required></label><br><br>
+
+            <label>Destination Interest:
+                <select name="destination">
+                    <option>Mountains</option>
+                    <option>Beaches</option>
+                    <option>Historical Places</option>
+                </select>
+            </label><br><br>
+
+            <label>Type of Traveler:</label><br>
+            <input type="radio" name="traveler" value="Solo"> Solo<br>
+            <input type="radio" name="traveler" value="Family"> Family<br>
+            <input type="radio" name="traveler" value="Adventure"> Adventure<br><br>
+
+            <label>Email ID: <input type="email" name="email" required></label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
